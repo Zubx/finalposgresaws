@@ -8,9 +8,10 @@ alter COLUMN sku TYPE TEXT
 ;
 
 
---- kalau aku mau masukin ini, system akan nolak karena produkdetail ada di schema public, bukan di rawdata input
+---# kalau aku mau masukin ini, system akan nolak karena produkdetail ada di schema public, bukan di rawdata input
 CREATE Table product_details (LIKE productdetails)
 ;
+
 --- ambil list status pesanan
 create Table list_status (
     id SERIAL     ,
