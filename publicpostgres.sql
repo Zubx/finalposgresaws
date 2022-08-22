@@ -25,6 +25,16 @@ SELECT
 distinct internal_status
 INTO list_status
 FROM product_sold
+;
 
+---copy tabel antar schema dengan seluruh data 
+CREATE Table produkdetails AS
+select
+*
+from public.productdetails
+;
 
+--- delete lasst kolom
+ALTER TABLE produkdetails
+DROP COLUMN lasst
 
